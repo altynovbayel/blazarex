@@ -1,0 +1,28 @@
+._navbar{
+  background-color: #D9D9D9;
+  height: 70px;
+}
+._nav__list{
+  gap: 30px;
+}
+._nav__item{
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 24px;
+  padding: 0 !important;
+  color: black !important;
+}
+._nav__item.active{
+  color: #8C00FD !important;
+
+}
+._nav__item img{
+  margin-right: 10px;
+}
+._nav__right{
+  gap: 10px;
+}
+._nav__right_btn span{
+  margin-right: 10px;
+}
+

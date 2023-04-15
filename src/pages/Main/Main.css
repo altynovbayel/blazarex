@@ -1,0 +1,76 @@
+._switch__btn span{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+}
+._switch_token{
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 29px;
+}
+._switch_token input{
+  display: none;
+}
+._slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(150.69% 118.33% at 123.17% 100%, #C6FFF1 0%, #E7C8FF 100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+._slider.round{
+  border-radius: 34px;
+}
+._slider.round::before{
+  border-radius: 50%;
+}
+._slider::before{
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #AB49F8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+._switch_token input:checked + ._slider {
+  background: radial-gradient(100% 100% at 0% 0%, rgba(3, 255, 195, 0.36) 0%, rgba(201, 133, 255, 0.77) 86.98%) ;
+
+}
+._switch_token input:focus + ._slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+._switch_token input:checked + ._slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background: radial-gradient(150.69% 118.33% at 123.17% 100%, #003629 0%, #7F00E2 100%) ;
+  transition: .4s;
+}
+._type__buttons ._type{
+  width: 178px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #F6EAFF;
+  box-shadow: 0 4px 10px 0 #00000040;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+._type__buttons ._type:hover{
+  background-color: #A800C0;
+  color: #fff;
+  font-size: 18px;
+}
+
+

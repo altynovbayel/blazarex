@@ -1,0 +1,132 @@
+._market{
+  width: 580px;
+  margin: 50px 0;
+}
+
+._market__header{
+  border-bottom: 1px solid #E7C8FF;
+}
+._market__header h3{
+  font-size: 20px;
+}
+
+._market__forms div{
+  display: flex;
+  gap: 10px;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+}
+
+._market__forms div input{
+  width: 379px;
+  height: 40px;
+  border: 1px solid #AB49F8;
+  border-radius: 10px;
+  padding: 8px 50px 8px 0 !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: end;
+}
+._market__forms div label{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+._input__type{
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  color: #AB49F8;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+._course__inp input{
+  background-color: rgba(102, 102, 102, 0.1);
+}
+
+._count__percent{
+  width: 339px;
+  height: 30px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between !important;
+}
+._count__percent ._circle{
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color:  #D9D9D9;
+}
+._percent__item{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+._switch_token{
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+}
+._switch_token input{
+  display: none;
+}
+._slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(150.69% 118.33% at 123.17% 100%, #C6FFF1 0%, #E7C8FF 100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+._slider.round{
+  border-radius: 34px;
+}
+._slider.round::before{
+  border-radius: 50%;
+}
+._slider::before{
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #AB49F8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+._switch_token input:checked + ._slider {
+  background: radial-gradient(100% 100% at 0% 0%, rgba(3, 255, 195, 0.36) 0%, rgba(201, 133, 255, 0.77) 86.98%) ;
+
+}
+._switch_token input:focus + ._slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+._switch_token input:checked + ._slider::before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+  background: radial-gradient(150.69% 118.33% at 123.17% 100%, #003629 0%, #7F00E2 100%) ;
+  transition: .4s;
+}
+._total__text span{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+._form_btn{
+  width: 180px;
+  height: 40px;
+  margin-left: auto;
+}
